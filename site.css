@@ -1,0 +1,16 @@
+h1{
+background-color: aqua;
+text-align: center;
+}
+#container-body{
+    text-align: center;
+    ;
+    
+}
+#botones{
+    justify-content: space-between;
+    margin: 15px;
+}
+#resultado{
+    border: rgb(160, 114, 245) solid 20px;
+}
