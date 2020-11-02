@@ -15,28 +15,28 @@ function operacionDividir(number1,number2){
     const dividir = number1 / number2;
     document.getElementById("resultado").innerHTML = dividir;
 }
-
-
-//console.log(7/2)
+let operador1;
+let operador2;
+function operadores(){
+     operador1 = parseInt(document.getElementById("operador1").value);
+     operador2 = parseInt(document.getElementById("operador2").value);
+}
 
 //Eventos
 document.getElementById("boton-suma").addEventListener("click",function(){
-    let operador1 = parseInt (document.getElementById("operador1").value);
-    let operador2 = parseInt (document.getElementById("operador2").value);
+    operadores();
     operacionSuma(operador1,operador2);
+    
 }); 
 document.getElementById("boton-resta").addEventListener("click",function(){
-    let operador1 = document.getElementById("operador1").value;
-    let operador2 = document.getElementById("operador2").value;
+    operadores();
     operacionResta(operador1,operador2);
 });
 document.getElementById("boton-multiplicar").addEventListener("click",function(){
-    let operador1 =document.getElementById("operador1").value;
-    let operador2 = document.getElementById("operador2").value;
+    operadores();
     operacionMultiplicar(operador1,operador2);
 });
 document.getElementById("boton-dividir").addEventListener("click", function(){
-    let operador1 = document.getElementById("operador1").value;
-    let operador2 = document.getElementById("operador2").value;
-    operacionDividir(operador1,operador2)
+    operadores();
+    operacionDividir(operador1,operador2);
 });
